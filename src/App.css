@@ -1,0 +1,80 @@
+.App-header {
+  background-color: #282c34;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: sticky;
+  top: 0;
+}
+.App-header p {
+  padding: 1rem;
+  color: #f1efef;
+}
+.App-hero {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/food.webp');
+  width: 80%;
+  height: 300px;
+  background-size: cover;
+  border-radius: 0 0 4px 4px;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #f1efef;
+}
+.App-restaurants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem 3rem 1rem;
+  flex-direction: column;
+}
+.restaurantList {
+  width: 70%;
+}
+.michelinStar,
+.normalMenu,
+.michelinMenu,
+.openingHours {
+  padding-bottom: 1.5rem;
+}
+.App-restaurants h2 {
+  font-size: 1.8rem;
+}
+.App-restaurants h2, h3, p {
+  line-height: 170%;
+}
+@media (max-width: 750px) {
+  .App-hero {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  .App-restaurants h2 {
+    font-size: 1.6rem;
+  }
+  .restaurantList {
+    width: 85%;
+  }
+}
+@media (max-width: 555px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .restaurantList {
+    width: 100%;
+  }
+}
